@@ -1,6 +1,10 @@
+#define a function main
+
 def main():
     print("===ECo-smart Irrigation system ===")
-    print("Company: QuantumLeaf\n")
+    print("Company: QuantumLeaf leading project \n")
+
+#error handeling
 
     weather = input("enter the weather condition (Raining/Sunny/cloud): ").strip().capitalize()
     try:
@@ -8,7 +12,8 @@ def main():
     except ValueError:
         print("Invalid input. Try again.\n")
         return
-    
+  #if else condition for weather checking
+  #   
     if moisture < 0 or moisture > 100:
         print("moisture level must be between 0 and 100.")
         return
@@ -24,6 +29,8 @@ def main():
 
     else:
         status = "standby"
+
+        #print result
 
     print(f"\nQuantumLeaf Irrigation status:  {status}")
 
